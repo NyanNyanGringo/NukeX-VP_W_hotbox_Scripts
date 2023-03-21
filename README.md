@@ -1,7 +1,7 @@
 # MY WHOTBOX SCRIPTS
 
 [YouTube](https://www.youtube.com/@parfprod1/videos)  
-[Nukepedia](http://www.nukepedia.com/)
+[Nukepedia](http://www.nukepedia.com/python/nodegraph/my-whotbox-scripts)
 
 I'm long-time user of WHotBox for NukeX, and now I would like to share some useful scripts for it.
 
