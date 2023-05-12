@@ -39,10 +39,10 @@ def getMatrixFromNode(node):
     return nodeMatrix
 
 
-def movePivotToAxis(selNode, newPivot=nuke.math.Vector3()):
+def movePivotToAxis(selNode, newPivot=nuke.math.Vector3(0.0, 0.0, 0.0)):
     # variables
-    oldTranslate = nuke.math.Vector3(selNode['translate'].x(), selNode['translate'].y(), selNode['translate'].z())
-    oldPivot = nuke.math.Vector3(selNode['pivot'].x(), selNode['pivot'].y(), selNode['pivot'].z())
+    oldTranslate = nuke.math.Vector3(float(selNode['translate'].x()), float(selNode['translate'].y()), float(selNode['translate'].z()))
+    oldPivot = nuke.math.Vector3(float(selNode['pivot'].x()), float(selNode['pivot'].y()), float(selNode['pivot'].z()))
     oldLocalTranslate = -oldPivot
     oldGlobalPivot = oldTranslate + oldPivot
 
