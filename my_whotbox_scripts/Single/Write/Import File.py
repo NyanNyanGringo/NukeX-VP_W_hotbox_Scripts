@@ -59,8 +59,9 @@ def get_file_name(file_full_name: str) -> str:
     # remove extension
     file_name = replace_on_end(file_extension, "", file_full_name)
 
-    # remove %d или %00d
+    # remove %d или %00d или .####
     file_name = re.sub("%(\d+|)d", "", file_name)
+    file_name = re.sub("\.#+", "", file_name)
 
     # remove version
     file_name = re.sub("_v\d+", "", file_name)
